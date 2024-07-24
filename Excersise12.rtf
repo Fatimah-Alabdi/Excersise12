@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Q1:\
+The output :\
+\
+Hey from message1\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Q2 :\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Hey from message1\
+\
+hey from message 2\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Q3 :\
+<\expnd0\expndtw0\kerning0
+getMessage2 has dependency so it will be the last one\kerning1\expnd0\expndtw0 >\
+Output 1:\
+\
+hey from message 1\
+\
+hey from message 3\
+\
+hey from message 2\
+\
+Output 2:\
+\
+Hey from message3\
+\
+Hey from message1\
+\
+hey from message 2\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+<it will start with 3 or 1because they don\'92t have dependency>\
+\
+<\expnd0\expndtw0\kerning0
+getMessage2\kerning1\expnd0\expndtw0  has qualifier \'93 3 \'93so \expnd0\expndtw0\kerning0
+it will print (hey from message2 )and returns the value "3", which it received from  getMessage3\kerning1\expnd0\expndtw0 >\
+\
+< The constructor MainController has qualifier"1", and it  will make the message 1 with this qualifier into the constructor, and will print (hey from Main controller)>\
+\
+Q4:\
+Output 1:\
+\
+hey from message 1\
+\
+hey from main controller\
+\
+hey from message 3\
+\
+hey from message 2\
+\
+Output 2:\
+\
+hey from message 3\
+\
+hey from message 2\
+\
+hey from message 1\
+\
+hey from main controller\
+\
+Output 3:\
+\
+ hey from message 1\
+\
+hey from message 3\
+\
+hey from message 2\
+\
+hey from main controller\
+\
+\
+Output 4:\
+\
+ hey from message 3\
+\
+hey from message 1\
+\
+hey from message 2\
+\
+hey from main controller\
+\
+Output 5:\
+hey from message 3\
+\
+hey from message 1\
+\
+hey from main controller\
+\
+hey from message 2\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Q5:\
+\
+<it will start with \expnd0\expndtw0\kerning0
+getMessage3 \kerning1\expnd0\expndtw0 because it don\'92t have \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 dependency\kerning1\expnd0\expndtw0 \outl0\strokewidth0 >\
+\
+<\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 getMessage2, use the result from getMessage3, and prints (hey from message2)>\
+\
+<the MainController  use the result from getMessage2, and prints (hey from Main controller)>\
+\
+< the getMessage1it passes the MainController object and prints (hey from message1)>\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+Output 1:\
+hey from message 3\
+\
+hey from message 2\
+\
+hey from main controller\
+\
+hey from message 1\
+\
+Output 2:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 hey from message3\
+\
+ hey from message2 \
+\
+hey from message1 \
+\
+hey from Main controller
+\f1\fs24 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+}
